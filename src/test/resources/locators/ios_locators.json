@@ -1,9 +1,0 @@
-{
-  "home_screen": {
-    "welcome_message": "id:welcomeLabel",
-    "profile_icon": "accessibility_id:ProfileIcon",
-    "settings_button": "name:Settings",
-    "notification_icon": "accessibility_id:NotificationIcon",
-    "search_bar": "id:searchField"
-  }
-}
