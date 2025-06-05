@@ -2,9 +2,9 @@
   "common": {
     "appium:platformName": "Android",
     "appium:automationName": "UiAutomator2",
-    "appium:deviceName": "R7KT403NVGJ",
-    "appium:appPackage": "com.foodi.userdev",
-    "appium:appActivity": "com.foodi.userdev.MainActivity"
+    "appium:deviceName": "e6d82a2c",
+    "appium:appPackage": "com.mocion.mocion",
+    "appium:appActivity": "com.mocion.mocion.MainActivity"
   },
   "selected": "Pixel_6",
   "devices": {

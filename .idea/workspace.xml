@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f747f1c7-f431-4557-9992-00538d7943a4" name="Changes" comment="first commit" />
+    <list default="true" id="f747f1c7-f431-4557-9992-00538d7943a4" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +69,7 @@
     "TestNG.LoginPageTest.verifyUserLoginWithEmailWIthValidCredentialsShouldSucceed.executor": "Run",
     "TestNG.LoginPageTest.verifyUserLoginWithMobileWIthValidCredentialsShouldSucceed.executor": "Run",
     "TestNG.OrderPlacedTest.verifyOrderPlacedShouldSucceed.executor": "Run",
-    "git-widget-placeholder": "configuration",
+    "git-widget-placeholder": "test-run",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
