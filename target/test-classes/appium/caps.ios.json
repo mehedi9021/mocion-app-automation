@@ -1,0 +1,7 @@
+{
+  "platformName": "iOS",
+  "deviceName": "Pixel_6",
+  "app": "src/test/resources/app/myapp.ipa",
+  "automationName": "UiAutomator2",
+  "noReset": true
+}

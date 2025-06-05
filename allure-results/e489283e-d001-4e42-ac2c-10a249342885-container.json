@@ -1,0 +1,1 @@
+{"uuid":"e489283e-d001-4e42-ac2c-10a249342885","name":"com.tsl.tests.BaseTest.setUp","children":["2752c7fe-13e3-4aeb-a1f1-c52e85e3a087"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1747461409458,"stop":1747461414862}],"afters":[],"start":1747461409458,"stop":1747461414862}

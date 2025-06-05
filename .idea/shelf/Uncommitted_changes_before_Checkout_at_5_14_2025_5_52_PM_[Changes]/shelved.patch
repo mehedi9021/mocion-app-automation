@@ -1,0 +1,98 @@
+Index: src/main/java/com/tsl/pages/PermissionPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.tsl.pages;\r\n\r\nimport com.tsl.exceptions.CustomRuntimeException;\r\nimport io.appium.java_client.AppiumDriver;\r\n\r\npublic class PermissionPage extends BasePage {\r\n    private static final String PERMISSION_SCREEN = \"permission\";\r\n    private static final String FAILURE_MESSAGE = \"Failed to click on \";\r\n\r\n    /**\r\n     * Constructs a new BasePage instance.\r\n     *\r\n     * @param driver The AppiumDriver instance to use for interacting with the app.\r\n     * @throws RuntimeException If the locator file cannot be found or loaded.\r\n     */\r\n    public PermissionPage(AppiumDriver driver) {\r\n        super(driver);\r\n    }\r\n\r\n    /**\r\n     * Clicks on the \"Allow\" button on the permission screen.\r\n     *\r\n     * @return The current instance of PermissionPage.\r\n     * @throws CustomRuntimeException If the click action fails.\r\n     */\r\n    public PermissionPage clickAllowButton() {\r\n        try {\r\n            click(PERMISSION_SCREEN, \"allow_button\");\r\n        } catch (Exception e) {\r\n            throw new CustomRuntimeException(FAILURE_MESSAGE + e.getMessage());\r\n        }\r\n        return this;\r\n    }\r\n\r\n    /**\r\n     * Clicks on the \"Deny\" button on the permission screen.\r\n     *\r\n     * @return The current instance of PermissionPage.\r\n     * @throws CustomRuntimeException If the click action fails.\r\n     */\r\n    public PermissionPage clickDenyButton() {\r\n        try {\r\n            click(PERMISSION_SCREEN, \"deny_button\");\r\n        } catch (Exception e) {\r\n            throw new CustomRuntimeException(PERMISSION_SCREEN + e.getMessage());\r\n        }\r\n        return this;\r\n    }\r\n\r\n    /**\r\n     * Clicks on the \"Continue\" button on the permission screen.\r\n     *\r\n     * @return The current instance of PermissionPage.\r\n     * @throws CustomRuntimeException If the click action fails.\r\n     */\r\n    public PermissionPage clickContinueButton() {\r\n        try {\r\n            click(PERMISSION_SCREEN, \"continue_button\");\r\n        } catch (Exception e) {\r\n            throw new CustomRuntimeException(FAILURE_MESSAGE + e.getMessage());\r\n        }\r\n\r\n        return this;\r\n    }\r\n\r\n    /**\r\n     * Clicks on the \"While Using App\" option on the permission screen.\r\n     *\r\n     * @return The current instance of PermissionPage.\r\n     * @throws CustomRuntimeException If the click action fails.\r\n     */\r\n    public HomePage clickWhileUsingAppOption() {\r\n        try {\r\n            click(PERMISSION_SCREEN, \"while_using_app\");\r\n        } catch (Exception e) {\r\n            throw new CustomRuntimeException(FAILURE_MESSAGE + e.getMessage());\r\n        }\r\n        return new HomePage(driver);\r\n    }\r\n\r\n    /**\r\n     * Clicks on the \"Only This Time\" option on the permission screen.\r\n     *\r\n     * @return The current instance of PermissionPage.\r\n     * @throws CustomRuntimeException If the click action fails.\r\n     */\r\n    public HomePage clickOnlyThisTimeOption() {\r\n        try {\r\n            click(PERMISSION_SCREEN, \"only_this_time\");\r\n        } catch (Exception e) {\r\n            throw new CustomRuntimeException(FAILURE_MESSAGE + e.getMessage());\r\n        }\r\n        return new HomePage(driver);\r\n    }\r\n\r\n    /**\r\n     * Clicks on the \"Don't Allow\" option on the permission screen.\r\n     *\r\n     * @return The current instance of PermissionPage.\r\n     * @throws CustomRuntimeException If the click action fails.\r\n     */\r\n    public HomePage clickDontAllowOption() {\r\n        try {\r\n            click(PERMISSION_SCREEN, \"dont_allow\");\r\n        } catch (Exception e) {\r\n            throw new CustomRuntimeException(FAILURE_MESSAGE + e.getMessage());\r\n        }\r\n        return new HomePage(driver);\r\n    }\r\n\r\n    public void clickAllowToLocationPermissionButton() {\r\n        try {\r\n            click(PERMISSION_SCREEN, \"location_permission_allow_button\");\r\n        } catch (Exception e) {\r\n            throw new CustomRuntimeException(FAILURE_MESSAGE + e.getMessage());\r\n        }\r\n        new PermissionPage(driver);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/tsl/pages/PermissionPage.java b/src/main/java/com/tsl/pages/PermissionPage.java
+--- a/src/main/java/com/tsl/pages/PermissionPage.java	(revision 9fb4bf2c000f6b32982b5a7a333e55b423baa869)
++++ b/src/main/java/com/tsl/pages/PermissionPage.java	(date 1747223527569)
+@@ -7,22 +7,10 @@
+     private static final String PERMISSION_SCREEN = "permission";
+     private static final String FAILURE_MESSAGE = "Failed to click on ";
+ 
+-    /**
+-     * Constructs a new BasePage instance.
+-     *
+-     * @param driver The AppiumDriver instance to use for interacting with the app.
+-     * @throws RuntimeException If the locator file cannot be found or loaded.
+-     */
+     public PermissionPage(AppiumDriver driver) {
+         super(driver);
+     }
+ 
+-    /**
+-     * Clicks on the "Allow" button on the permission screen.
+-     *
+-     * @return The current instance of PermissionPage.
+-     * @throws CustomRuntimeException If the click action fails.
+-     */
+     public PermissionPage clickAllowButton() {
+         try {
+             click(PERMISSION_SCREEN, "allow_button");
+@@ -32,12 +20,6 @@
+         return this;
+     }
+ 
+-    /**
+-     * Clicks on the "Deny" button on the permission screen.
+-     *
+-     * @return The current instance of PermissionPage.
+-     * @throws CustomRuntimeException If the click action fails.
+-     */
+     public PermissionPage clickDenyButton() {
+         try {
+             click(PERMISSION_SCREEN, "deny_button");
+@@ -47,12 +29,6 @@
+         return this;
+     }
+ 
+-    /**
+-     * Clicks on the "Continue" button on the permission screen.
+-     *
+-     * @return The current instance of PermissionPage.
+-     * @throws CustomRuntimeException If the click action fails.
+-     */
+     public PermissionPage clickContinueButton() {
+         try {
+             click(PERMISSION_SCREEN, "continue_button");
+@@ -63,12 +39,6 @@
+         return this;
+     }
+ 
+-    /**
+-     * Clicks on the "While Using App" option on the permission screen.
+-     *
+-     * @return The current instance of PermissionPage.
+-     * @throws CustomRuntimeException If the click action fails.
+-     */
+     public HomePage clickWhileUsingAppOption() {
+         try {
+             click(PERMISSION_SCREEN, "while_using_app");
+@@ -78,12 +48,6 @@
+         return new HomePage(driver);
+     }
+ 
+-    /**
+-     * Clicks on the "Only This Time" option on the permission screen.
+-     *
+-     * @return The current instance of PermissionPage.
+-     * @throws CustomRuntimeException If the click action fails.
+-     */
+     public HomePage clickOnlyThisTimeOption() {
+         try {
+             click(PERMISSION_SCREEN, "only_this_time");
+@@ -93,12 +57,6 @@
+         return new HomePage(driver);
+     }
+ 
+-    /**
+-     * Clicks on the "Don't Allow" option on the permission screen.
+-     *
+-     * @return The current instance of PermissionPage.
+-     * @throws CustomRuntimeException If the click action fails.
+-     */
+     public HomePage clickDontAllowOption() {
+         try {
+             click(PERMISSION_SCREEN, "dont_allow");

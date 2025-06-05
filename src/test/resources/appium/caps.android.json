@@ -1,0 +1,8 @@
+{
+  "appium:automationName": "UiAutomator2",
+  "appium:platformName": "Android",
+  "appium:platformVersion": "14",
+  "appium:deviceName": "QK5HV4NFJJVSHUL7",
+  "appium:appPackage": "com.foodiBd",
+  "appium:appActivity": "com.foodiBd.MainActivity"
+}

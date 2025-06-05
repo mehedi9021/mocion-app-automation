@@ -1,0 +1,32 @@
+{
+  "common": {
+    "appium:platformName": "Android",
+    "appium:automationName": "UiAutomator2",
+    "appium:deviceName": "R7KT403NVGJ",
+    "appium:appPackage": "com.foodi.userdev",
+    "appium:appActivity": "com.foodi.userdev.MainActivity"
+  },
+  "selected": "Pixel_6",
+  "devices": {
+    "Pixel_3": {
+      "appium:deviceName": "Pixel_3",
+      "appium:platformVersion": "14",
+      "appium:udid": "QK5HV4NFJJVSHUL7"
+    },
+    "Pixel_4": {
+      "appium:deviceName": "Pixel_4",
+      "appium:platformVersion": "10.0",
+      "appium:udid": "R7KT403NVGJ"
+    },
+    "Pixel_5": {
+      "appium:deviceName": "Pixel_5",
+      "appium:platformVersion": "10.0",
+      "appium:udid": "R7KT403NVGJ"
+    },
+    "Pixel_6": {
+      "appium:deviceName": "Pixel_6",
+      "appium:platformVersion": "10.0",
+      "appium:udid": "R7KT403NVGJ"
+    }
+  }
+}

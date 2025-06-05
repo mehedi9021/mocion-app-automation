@@ -1,0 +1,146 @@
+{
+  "permission_screen": {
+    "continue_button": "ui:new UiSelector().text(\"Continue\")",
+    "allow_button": "ui:new UiSelector().resourceId(\"com.android.permissioncontroller:id/permission_allow_button\")",
+    "deny_button": "ui:new UiSelector().resourceId(\"com.android.permissioncontroller:id/permission_deny_button\")",
+    "while_using_app": "ui:new UiSelector().resourceId(\"com.android.permissioncontroller:id/permission_allow_foreground_only_button\")",
+    "only_this_time": "ui:new UiSelector().resourceId(\"com.android.permissioncontroller:id/permission_allow_one_time_button\")",
+    "dont_allow": "ui:new UiSelector().resourceId(\"com.android.permissioncontroller:id/permission_deny_button\")",
+    "manual_location_button": "ui:new UiSelector().text(\"Enter location manually\")",
+    "location_permission_allow_button": "ui:new UiSelector().resourceId(\"com.android.permissioncontroller:id/permission_allow_foreground_only_button\")"
+  },
+  "location_screen": {
+    "click_delivery_to": "ui:new UiSelector().text(\"Deliver to\")",
+    "click_add_new_address": "ui:new UiSelector().description(\"Add new address\")",
+    "location_input_field": "ui:new UiSelector().text(\"Search for an address\")",
+    "click_confirm_location_button": "ui:new UiSelector().description(\"Confirm Location\")",
+    "click_on_label_home": "ui:new UiSelector().text(\"Home\")",
+    "click_save_and_continue_button": "ui:new UiSelector().description(\"Save and Continue\")"
+  },
+  "login_screen": {
+    "login_button": "ui:new UiSelector().description(\"Log in\")",
+    "login_with_phone_number_button": "ui:new UiSelector().description(\"Log in with phone number\")",
+    "login_with_email_button": "ui:new UiSelector().description(\"Continue with Email\")",
+    "phone_number_input_filed": "ui:new UiSelector().text(\"017XXXXXXXX\")",
+    "email_input_field": "ui:new UiSelector().text(\"Email\")",
+    "password_input_field": "ui:new UiSelector().text(\"Password\")",
+    "sign_in_with_phone_button": "ui:new UiSelector().description(\"Sign in with phone\")",
+    "sign_in_with_email_button": "ui:new UiSelector().description(\"Sign in with email\")",
+    "welcome_message": [
+      "id:welcome_text",
+      "xpath:welcome_text"
+    ],
+    "profile_icon": "id:profile_icon",
+    "settings_button": "id:settings_btn",
+    "notification_icon": "id:notification_icon",
+    "search_bar": "id:search_input"
+  },
+  "home_screen": {
+    "click_home_icon": "ui:new UiSelector().description(\"Home\")",
+    "click_orders_icon": "ui:new UiSelector().description(\"Orders\")",
+    "click_food_delivery": "ui:new UiSelector().text(\"Food\")",
+    "click_flower_delivery": "ui:new UiSelector().text(\"Flowers\")",
+    "click_food_cuisine": "ui:new UiSelector().text(\"Burger\")",
+    "click_popular_brand": "ui:new UiSelector().text(\"DimSum Town\")",
+    "click_restaurant": "ui:new UiSelector().text(\"DimSum Town Baridhara - for Automation Testing\")",
+    "welcome_message": [
+      "id:welcome_text",
+      "xpath:welcome_text"
+    ],
+    "profile_icon": "id:profile_icon",
+    "settings_button": "id:settings_btn",
+    "notification_icon": "id:notification_icon",
+    "search_bar": "id:search_input",
+    "food_delivery_button": "ui:new UiSelector().className(\"android.widget.ImageView\").instance(2)",
+    "click_food_campaign": "ui:new UiSelector().className(\"android.widget.ImageView\").instance(0)",
+    "add_new_address": "ui:new UiSelector().text(\"Add new address\")",
+    "search_address": "ui:new UiSelector().text(\"Search for an address\")"
+  },
+  "food_delivery_screen": {
+    "click_food_campaign": "ui:new UiSelector().className(\"android.widget.ImageView\").instance(0)",
+    "click_food_cuisine": "ui:new UiSelector().text(\"Burger\")",
+    "click_popular_brand": "ui:new UiSelector().text(\"DimSum Town\")",
+    "click_restaurant": "ui:new UiSelector().text(\"DimSum Town Baridhara - for Automation Testing\")"
+  },
+  "flower_delivery_screen": {
+    "click_flower_campaign": "ui:new UiSelector().className(\"android.widget.ImageView\").instance(0)",
+    "click_flower_cuisine": "ui:new UiSelector().text(\"Tuberose\")",
+    "click_flower_shop": "ui:new UiSelector().text(\"Flower Baridhara for automation testing\")"
+  },
+  "delivery_screen": {
+    "welcome_message": [
+      "id:welcome_text",
+      "xpath:welcome_text"
+    ],
+    "profile_icon": "id:profile_icon",
+    "settings_button": "id:settings_btn",
+    "notification_icon": "id:notification_icon",
+    "search_bar": "id:search_input"
+  },
+  "account_screen": {
+    "account_button": "ui:new UiSelector().description(\"Account\")",
+    "user_profile_picture": "ui:new UiSelector().className(\"android.widget.ImageView\").instance(0)"
+  },
+  "profile_screen": {
+    "click_edit_profile": "ui:new UiSelector().description(\"Edit Profile\")",
+    "click_change_password": "ui:new UiSelector().description(\"Change Password\")"
+  },
+  "edit_profile_screen": {
+    "first_name_field": "ui:new UiSelector().text(\"MH\")",
+    "last_name_field": "ui:new UiSelector().text(\"Enter your last name\")",
+    "submit_button": "ui:new UiSelector().description(\"Submit\")"
+  },
+  "change_password_screen": {
+    "old_password_field": "ui:new UiSelector().text(\"Old password\")",
+    "new_password_field": "ui:new UiSelector().text(\"New password\")",
+    "confirm_password_field": "ui:new UiSelector().text(\"Confirm password\")",
+    "submit_button": "ui:new UiSelector().description(\"Submit\")"
+  },
+  "food_campaign_screen": {
+    "click_restaurant": "ui:new UiSelector().text(\"DimSum Town Baridhara - for Automation Testing\")"
+  },
+  "flower_campaign_screen": {
+    "click_flower_shop": "ui:new UiSelector().text(\"Flower Baridhara for automation testing\")"
+  },
+  "food_cuisine_screen": {
+    "click_restaurant": "ui:new UiSelector().text(\"DimSum Town Baridhara - for Automation Testing\")"
+  },
+  "flower_cuisine_screen": {
+    "click_flower_shop": "ui:new UiSelector().text(\"Flower Baridhara for automation testing\")"
+  },
+  "popular_brand_screen": {
+    "click_restaurant": "ui:new UiSelector().text(\"DimSum Town Baridhara - for Automation Testing\")"
+  },
+  "branch_details_screen": {
+    "select_menu": "ui:new UiSelector().text(\"Chicken& Lemongrass Siu Mai\")",
+    "add_to_cart_button": "ui:new UiSelector().description(\"Add to cart\")",
+    "view_your_cart_button": "ui:new UiSelector().className(\"android.view.View\")"
+  },
+  "shop_details_screen": {
+    "select_flower_item": "ui:new UiSelector().text(\"Pink roses\")",
+    "add_to_cart_button": "ui:new UiSelector().description(\"Add to cart\")",
+    "view_your_cart_button": "ui:new UiSelector().className(\"android.view.View\")"
+  },
+  "my_cart_screen": {
+    "review_payment_button": "ui:new UiSelector().description(\"Review payment & address\")"
+  },
+  "checkout_screen": {
+    "change_payment_method": "ui:new UiSelector().text(\"Change\")",
+    "place_order_button": "ui:new UiSelector().description(\"Place Order\")",
+    "do_it_now_button": "ui:new UiSelector().description(\"Do it now\")",
+    "receivers_name_input_field": "ui:new UiSelector().text(\"Receivers name\")",
+    "receivers_mobile_number_input_field": "ui:new UiSelector().text(\"Receivers mobile number\")",
+    "confirm_button_for_order_for_someone_else": "ui:new UiSelector().description(\"Confirm\")"
+  },
+  "my_order_screen": {
+    "complete_orders": "ui:new UiSelector().description(\"Complete\")",
+    "order_again_button": "ui:new UiSelector().description(\"Order Again\").instance(0)"
+  },
+  "payment_method_screen": {
+    "select_cash_on_delivery": "ui:new UiSelector().description(\"Cash on Delivery\")",
+    "confirm_button": "ui:new UiSelector().text(\"Confirm\")",
+    "select_payment_method_bkash": "ui:new UiSelector().description(\"bKash ( 01770618575 )\")",
+    "bkash_pin_input_filed": "ui:new UiSelector().resourceId(\"PIN\")",
+    "bkash_pin_confirm_button": "ui:new UiSelector().text(\"Confirm\")"
+  }
+}

@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f747f1c7-f431-4557-9992-00538d7943a4" name="Changes" comment="first commit" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="mehedi-change-address-from-checkout-test" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2x1jARum1QheTcFakdPw37A9OYD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.AccountPageTest.verifyUserProfileUpdateShouldSucceed.executor": "Run",
+    "TestNG.AuthenticationTest.executor": "Run",
+    "TestNG.AuthenticationTest.verifyUserLoginWithEmailWIthInvalidCredentialsShouldSucceed.executor": "Run",
+    "TestNG.AuthenticationTest.verifyUserLoginWithMobileWIthValidCredentialsShouldSucceed.executor": "Run",
+    "TestNG.FoodDeliveryTest.verifyFoodDeliveryOrderPlaceFromCampaignShouldSucceed.executor": "Run",
+    "TestNG.HomePageTest.verifyFoodDeliveryOrderPlaceFromCampaignShouldSucceed.executor": "Run",
+    "TestNG.HomePageTest.verifyFoodDeliveryOrderPlaceFromCuisineShouldSucceed.executor": "Run",
+    "TestNG.HomePageTest.verifyFoodDeliveryOrderPlaceFromPopularBrandShouldSucceed.executor": "Run",
+    "TestNG.LoginPageTest.executor": "Run",
+    "TestNG.LoginPageTest.verifyUserLoggedInShouldSucceed.executor": "Run",
+    "TestNG.LoginPageTest.verifyUserLoginWithEmailWIthValidCredentialsShouldSucceed.executor": "Run",
+    "TestNG.LoginPageTest.verifyUserLoginWithMobileWIthValidCredentialsShouldSucceed.executor": "Run",
+    "TestNG.OrderPlacedTest.verifyOrderPlacedShouldSucceed.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="TestNG.HomePageTest.verifyFoodDeliveryOrderPlaceFromPopularBrandShouldSucceed">
+    <configuration name="HomePageTest.verifyFoodDeliveryOrderPlaceFromCampaignShouldSucceed" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="foodi-mobile-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tsl.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tsl.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tsl.tests.HomePageTest" />
+      <option name="METHOD_NAME" value="verifyFoodDeliveryOrderPlaceFromCampaignShouldSucceed" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest.verifyFoodDeliveryOrderPlaceFromCuisineShouldSucceed" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="foodi-mobile-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tsl.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tsl.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tsl.tests.HomePageTest" />
+      <option name="METHOD_NAME" value="verifyFoodDeliveryOrderPlaceFromCuisineShouldSucceed" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest.verifyFoodDeliveryOrderPlaceFromPopularBrandShouldSucceed" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="foodi-mobile-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tsl.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tsl.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tsl.tests.HomePageTest" />
+      <option name="METHOD_NAME" value="verifyFoodDeliveryOrderPlaceFromPopularBrandShouldSucceed" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="foodi-mobile-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tsl.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tsl.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tsl.tests.LoginPageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest.verifyUserLoginWithEmailWIthValidCredentialsShouldSucceed" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="foodi-mobile-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tsl.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tsl.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tsl.tests.LoginPageTest" />
+      <option name="METHOD_NAME" value="verifyUserLoginWithEmailWIthValidCredentialsShouldSucceed" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.LoginPageTest.verifyUserLoginWithEmailWIthValidCredentialsShouldSucceed" />
+        <item itemvalue="TestNG.LoginPageTest" />
+        <item itemvalue="TestNG.HomePageTest.verifyFoodDeliveryOrderPlaceFromPopularBrandShouldSucceed" />
+        <item itemvalue="TestNG.HomePageTest.verifyFoodDeliveryOrderPlaceFromCuisineShouldSucceed" />
+        <item itemvalue="TestNG.HomePageTest.verifyFoodDeliveryOrderPlaceFromCampaignShouldSucceed" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.387" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.387" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f747f1c7-f431-4557-9992-00538d7943a4" name="Changes" comment="" />
+      <created>1747112331622</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747112331622</updated>
+      <workItem from="1747112333931" duration="3661000" />
+      <workItem from="1747119573318" duration="3007000" />
+      <workItem from="1747130622196" duration="965000" />
+      <workItem from="1747137221805" duration="1864000" />
+      <workItem from="1747199895092" duration="12961000" />
+      <workItem from="1747280452389" duration="23974000" />
+      <workItem from="1747312370275" duration="74000" />
+      <workItem from="1747452801494" duration="1322000" />
+      <workItem from="1747457073922" duration="24683000" />
+      <workItem from="1747540078351" duration="21126000" />
+      <workItem from="1747625746396" duration="2856000" />
+      <workItem from="1747628665243" duration="7661000" />
+      <workItem from="1747738421181" duration="6509000" />
+      <workItem from="1748090773288" duration="22000" />
+      <workItem from="1748836146793" duration="1254000" />
+      <workItem from="1748842602787" duration="17961000" />
+      <workItem from="1748923262886" duration="6208000" />
+      <workItem from="1749013441012" duration="948000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747218429253</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747218429253</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747218871922</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747218871922</updated>
+    </task>
+    <task id="LOCAL-00003" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747219499982</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747219499982</updated>
+    </task>
+    <task id="LOCAL-00004" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747219743360</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747219743360</updated>
+    </task>
+    <task id="LOCAL-00005" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747303045508</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747303045508</updated>
+    </task>
+    <task id="LOCAL-00006" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747303101200</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1747303101200</updated>
+    </task>
+    <task id="LOCAL-00007" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747309398085</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1747309398085</updated>
+    </task>
+    <task id="LOCAL-00008" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747310506827</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747310506827</updated>
+    </task>
+    <task id="LOCAL-00009" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747311641118</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747311641118</updated>
+    </task>
+    <task id="LOCAL-00010" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747466062677</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1747466062677</updated>
+    </task>
+    <task id="LOCAL-00011" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747467630776</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1747467630776</updated>
+    </task>
+    <task id="LOCAL-00012" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747470508071</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1747470508071</updated>
+    </task>
+    <task id="LOCAL-00013" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747471188995</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1747471188995</updated>
+    </task>
+    <task id="LOCAL-00014" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747471343296</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1747471343296</updated>
+    </task>
+    <task id="LOCAL-00015" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747471782514</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1747471782514</updated>
+    </task>
+    <task id="LOCAL-00016" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747472199150</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1747472199150</updated>
+    </task>
+    <task id="LOCAL-00017" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747472234458</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1747472234458</updated>
+    </task>
+    <task id="LOCAL-00018" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747480972378</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1747480972378</updated>
+    </task>
+    <task id="LOCAL-00019" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747482047625</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1747482047625</updated>
+    </task>
+    <task id="LOCAL-00020" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747482153960</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1747482153960</updated>
+    </task>
+    <task id="LOCAL-00021" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747482621112</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1747482621112</updated>
+    </task>
+    <task id="LOCAL-00022" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747483633303</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1747483633303</updated>
+    </task>
+    <task id="LOCAL-00023" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747553475851</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1747553475851</updated>
+    </task>
+    <task id="LOCAL-00024" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747557149313</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1747557149313</updated>
+    </task>
+    <task id="LOCAL-00025" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747558078015</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1747558078015</updated>
+    </task>
+    <task id="LOCAL-00026" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747628676140</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1747628676140</updated>
+    </task>
+    <task id="LOCAL-00027" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747636701361</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1747636701361</updated>
+    </task>
+    <task id="LOCAL-00028" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747740075088</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1747740075089</updated>
+    </task>
+    <task id="LOCAL-00029" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747740089371</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1747740089371</updated>
+    </task>
+    <task id="LOCAL-00030" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747740131697</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1747740131697</updated>
+    </task>
+    <task id="LOCAL-00031" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747741195947</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1747741195947</updated>
+    </task>
+    <task id="LOCAL-00032" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747741772116</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1747741772116</updated>
+    </task>
+    <task id="LOCAL-00033" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747741795703</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1747741795703</updated>
+    </task>
+    <task id="LOCAL-00034" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747741829423</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1747741829423</updated>
+    </task>
+    <task id="LOCAL-00035" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747742167008</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1747742167008</updated>
+    </task>
+    <task id="LOCAL-00036" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747742558808</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1747742558808</updated>
+    </task>
+    <task id="LOCAL-00037" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1747742644419</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1747742644419</updated>
+    </task>
+    <task id="LOCAL-00038" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1748848507447</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1748848507447</updated>
+    </task>
+    <task id="LOCAL-00039" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1748848586455</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1748848586455</updated>
+    </task>
+    <task id="LOCAL-00040" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1748864259814</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1748864259814</updated>
+    </task>
+    <task id="LOCAL-00041" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1748929627828</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1748929627828</updated>
+    </task>
+    <task id="LOCAL-00042" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1749013923382</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1749013923382</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+</project>
