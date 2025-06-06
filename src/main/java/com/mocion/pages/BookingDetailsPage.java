@@ -11,5 +11,6 @@ public class BookingDetailsPage extends BasePage {
 
     public void clickConfirmPaymentButton() {
         scrollUntilVisible(BOOKING_DETAILS_SCREEN, "confirm_payment_button");
+        click(BOOKING_DETAILS_SCREEN, "confirm_payment_button");
     }
 }

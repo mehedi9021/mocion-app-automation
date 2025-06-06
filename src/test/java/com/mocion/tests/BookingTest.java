@@ -1,6 +1,7 @@
 package com.mocion.tests;
 
 import com.mocion.pages.*;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -39,6 +40,7 @@ public class BookingTest extends BaseTest {
                 .clickMakePaymentButton()
                 .clickAcceptPaymentButton();
 
-        Assert.assertTrue(driver.findElement(paymentPage.getPaymentSuccessLocator()).isDisplayed());
+        WebElement successElement = paymentPage.waitForPaymentSuccessElement();
+        Assert.assertTrue(successElement.isDisplayed());
     }
 }

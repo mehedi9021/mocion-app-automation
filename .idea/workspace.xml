@@ -5,81 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f747f1c7-f431-4557-9992-00538d7943a4" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mocion/pages/BookingDetailsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mocion/pages/BookingPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mocion/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mocion/pages/PaymentPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mocion/tests/BookingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mocion/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mocion/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mocion/pages/FoodDeliveryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mocion/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mocion/tests/FoodDeliveryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/appium/caps1.android.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/appium/caps1.android.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mocion/pages/BookingDetailsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mocion/pages/BookingDetailsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mocion/pages/BookingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mocion/pages/BookingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mocion/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mocion/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mocion/pages/PaymentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mocion/pages/PaymentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mocion/tests/BookingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mocion/tests/BookingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/locators/android_locators.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/locators/android_locators.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/annotations/TestAnnotations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/constants/FrameworkConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/drivers/DesiredCapabilitiesFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/drivers/DriverFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/enums/LoginType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/enums/PlatformType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/exceptions/CustomRuntimeException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/exceptions/DataParsingException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/exceptions/ElementLoadingException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/exceptions/FileNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/listeners/TestListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/models/GestureCoordinates$GestureCoordinatesBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/models/GestureCoordinates.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/models/UserData$UserDataBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/models/UserData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/AccountPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/BasePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/BranchDetailsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/ChangePasswordPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/CheckoutPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/EditProfilePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/FlowerCampaignPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/FlowerCuisinePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/FlowerDeliveryPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/FoodCampaignPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/FoodCuisinePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/FoodDeliveryPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/LocationPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/LoginPage$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/LoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/MyCartPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/MyOrderPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/OfferPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/PaymentMethodPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/PermissionPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/PopularBrandPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/ProfilePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/ShopDetailsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/footer/ContactUsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/footer/HelpCenterPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/footer/PrivacyPolicyPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/pages/footer/RefundPolicyPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/utils/AppiumServerManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/utils/GestureUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/utils/LocatorManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tsl/utils/ReportUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/appium/caps.android.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/appium/caps.android.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/appium/caps.ios.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/appium/caps1.android.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/appium/caps1.android.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tsl/tests/AuthenticationTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tsl/tests/BaseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tsl/tests/FlowerDeliveryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tsl/tests/FoodDeliveryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tsl/tests/HomePageTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tsl/tests/MyOrderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tsl/tests/PermissionPageTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tsl/tests/ProfileTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/locators/android_locators.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/locators/android_locators.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/locators/ios_locators.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/suites/master-suite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/suites/sanity-suite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/suites/smoke-suite.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +80,7 @@
     "TestNG.LoginPageTest.verifyUserLoginWithEmailWIthValidCredentialsShouldSucceed.executor": "Run",
     "TestNG.LoginPageTest.verifyUserLoginWithMobileWIthValidCredentialsShouldSucceed.executor": "Run",
     "TestNG.OrderPlacedTest.verifyOrderPlacedShouldSucceed.executor": "Run",
-    "git-widget-placeholder": "test-run",
+    "git-widget-placeholder": "booking-test",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -292,7 +227,7 @@
       <workItem from="1749144622848" duration="45000" />
       <workItem from="1749144727042" duration="865000" />
       <workItem from="1749185036404" duration="731000" />
-      <workItem from="1749185820228" duration="6519000" />
+      <workItem from="1749185820228" duration="11800000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -654,7 +589,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749147380212</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1749192853612</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1749192853612</updated>
+    </task>
+    <task id="LOCAL-00047" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1749192886734</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1749192886734</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

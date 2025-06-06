@@ -33,7 +33,7 @@ public class BookingPage extends BasePage {
     }
 
     public void selectPrice() {
-        scrollUntilVisible(BOOKING_SCREEN, "price");
+        scrollUntilVisible(BOOKING_SCREEN, "select_price");
         click(BOOKING_SCREEN, "select_price");
     }
 }
