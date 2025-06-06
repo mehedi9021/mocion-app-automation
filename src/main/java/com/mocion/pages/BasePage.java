@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.Collections;
+import java.util.Arrays;
 
 public class BasePage {
     protected AppiumDriver driver;
@@ -118,52 +118,40 @@ public class BasePage {
         return driver.getTitle();
     }
 
-    public void scroll(String screen, String element) {
-        while (true) {
+    public void scrollUntilVisible(String screen, String element) {
+        int maxScrolls = 5;
+        int attempt = 0;
+
+        while (attempt < maxScrolls) {
             try {
-                WebElement el = findElement(screen, element);
-                if (el.isDisplayed()) {
-                    System.out.println("Element found: " + element);
-                    return;
+                WebElement targetElement = driver.findElement(getLocator(screen, element));
+                if (targetElement.isDisplayed()) {
+                    break;
                 }
-            } catch (Exception e) {
-                System.out.println("Element not in view, scrolling...");
+            } catch (Exception ignored) {
+                // Not visible, keep scrolling
             }
 
-            boolean isEndOfScroll = isEndOfScrollableContent();
-            if (isEndOfScroll) {
-                System.out.println("Reached the end of scrollable content. Element not found: " + element);
-                break;
-            }
+            int screenHeight = driver.manage().window().getSize().height;
+            int screenWidth = driver.manage().window().getSize().width;
+
+            int startX = screenWidth / 2;
+            int startY = (int) (screenHeight * 0.8); // bottom
+            int endY = (int) (screenHeight * 0.2);   // top
+
+            PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger1");
+            Sequence scroll = new Sequence(finger, 1);
+
+            scroll.addAction(finger.createPointerMove(Duration.ofMillis(0),
+                    PointerInput.Origin.viewport(), startX, startY));
+            scroll.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+            scroll.addAction(finger.createPointerMove(Duration.ofMillis(800),
+                    PointerInput.Origin.viewport(), startX, endY));
+            scroll.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+
+            driver.perform(Arrays.asList(scroll));
+
+            attempt++;
         }
-    }
-
-    private void swipeUp() {
-        var size = driver.manage().window().getSize();
-        int startX = size.width / 2;
-        int startY = (int) (size.height * 0.8);
-        int endY = (int) (size.height * 0.2);
-
-        PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
-        Sequence swipe = new Sequence(finger, 1);
-
-        swipe.addAction(finger.createPointerMove(Duration.ZERO, PointerInput.Origin.viewport(), startX, startY));
-        swipe.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
-        swipe.addAction(finger.createPointerMove(Duration.ofMillis(500), PointerInput.Origin.viewport(), startX, endY));
-        swipe.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
-
-        driver.perform(Collections.singletonList(swipe));
-    }
-
-    private boolean isEndOfScrollableContent() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
-
-        return wait.until(driver -> {
-            String beforeScroll = driver.getPageSource();
-            swipeUp();
-            String afterScroll = driver.getPageSource();
-            assert beforeScroll != null;
-            return beforeScroll.equals(afterScroll);
-        });
     }
 }

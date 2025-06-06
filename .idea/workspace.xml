@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f747f1c7-f431-4557-9992-00538d7943a4" name="Changes" comment="first commit" />
+    <list default="true" id="f747f1c7-f431-4557-9992-00538d7943a4" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mocion/pages/BookingDetailsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mocion/pages/BookingDetailsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mocion/pages/BookingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mocion/pages/BookingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mocion/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mocion/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mocion/pages/PaymentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mocion/pages/PaymentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mocion/tests/BookingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mocion/tests/BookingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/locators/android_locators.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/locators/android_locators.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/locators/android_locators.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/locators/android_locators.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +69,8 @@
     "TestNG.AuthenticationTest.executor": "Run",
     "TestNG.AuthenticationTest.verifyUserLoginWithEmailWIthInvalidCredentialsShouldSucceed.executor": "Run",
     "TestNG.AuthenticationTest.verifyUserLoginWithMobileWIthValidCredentialsShouldSucceed.executor": "Run",
+    "TestNG.BookingTest.VerifyBookingCreateShouldSucceed.executor": "Run",
+    "TestNG.BookingTest.executor": "Run",
     "TestNG.FoodDeliveryTest.verifyFoodDeliveryOrderPlaceFromCampaignShouldSucceed.executor": "Run",
     "TestNG.HomePageTest.verifyFoodDeliveryOrderPlaceFromCampaignShouldSucceed.executor": "Run",
     "TestNG.HomePageTest.verifyFoodDeliveryOrderPlaceFromCuisineShouldSucceed.executor": "Run",
@@ -67,7 +80,7 @@
     "TestNG.LoginPageTest.verifyUserLoginWithEmailWIthValidCredentialsShouldSucceed.executor": "Run",
     "TestNG.LoginPageTest.verifyUserLoginWithMobileWIthValidCredentialsShouldSucceed.executor": "Run",
     "TestNG.OrderPlacedTest.verifyOrderPlacedShouldSucceed.executor": "Run",
-    "git-widget-placeholder": "configuration",
+    "git-widget-placeholder": "booking-test",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -78,36 +91,35 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.HomePageTest.verifyFoodDeliveryOrderPlaceFromPopularBrandShouldSucceed">
-    <configuration name="HomePageTest.verifyFoodDeliveryOrderPlaceFromCampaignShouldSucceed" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="foodi-mobile-app" />
+  <component name="RunManager" selected="TestNG.BookingTest.VerifyBookingCreateShouldSucceed">
+    <configuration name="BookingTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mocion-app-automation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tsl.tests.*" />
+          <option name="PATTERN" value="com.mocion.pages.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tsl.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tsl.tests.HomePageTest" />
-      <option name="METHOD_NAME" value="verifyFoodDeliveryOrderPlaceFromCampaignShouldSucceed" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="com.mocion.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.mocion.tests.BookingTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest.verifyFoodDeliveryOrderPlaceFromCuisineShouldSucceed" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="foodi-mobile-app" />
+    <configuration name="BookingTest.VerifyBookingCreateShouldSucceed" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mocion-app-automation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tsl.tests.*" />
+          <option name="PATTERN" value="com.mocion.pages.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tsl.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tsl.tests.HomePageTest" />
-      <option name="METHOD_NAME" value="verifyFoodDeliveryOrderPlaceFromCuisineShouldSucceed" />
+      <option name="PACKAGE_NAME" value="com.mocion.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.mocion.tests.BookingTest" />
+      <option name="METHOD_NAME" value="VerifyBookingCreateShouldSucceed" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -170,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.BookingTest.VerifyBookingCreateShouldSucceed" />
+        <item itemvalue="TestNG.BookingTest" />
         <item itemvalue="TestNG.LoginPageTest.verifyUserLoginWithEmailWIthValidCredentialsShouldSucceed" />
         <item itemvalue="TestNG.LoginPageTest" />
         <item itemvalue="TestNG.HomePageTest.verifyFoodDeliveryOrderPlaceFromPopularBrandShouldSucceed" />
-        <item itemvalue="TestNG.HomePageTest.verifyFoodDeliveryOrderPlaceFromCuisineShouldSucceed" />
-        <item itemvalue="TestNG.HomePageTest.verifyFoodDeliveryOrderPlaceFromCampaignShouldSucceed" />
       </list>
     </recent_temporary>
   </component>
@@ -214,6 +226,8 @@
       <workItem from="1749013441012" duration="948000" />
       <workItem from="1749144622848" duration="45000" />
       <workItem from="1749144727042" duration="865000" />
+      <workItem from="1749185036404" duration="731000" />
+      <workItem from="1749185820228" duration="11800000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -559,7 +573,39 @@
       <option name="project" value="LOCAL" />
       <updated>1749145535400</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1749147359800</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1749147359800</updated>
+    </task>
+    <task id="LOCAL-00045" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1749147380212</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1749147380212</updated>
+    </task>
+    <task id="LOCAL-00046" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1749192853612</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1749192853612</updated>
+    </task>
+    <task id="LOCAL-00047" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1749192886734</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1749192886734</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
