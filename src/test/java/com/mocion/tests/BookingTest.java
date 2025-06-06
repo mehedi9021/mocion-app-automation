@@ -1,0 +1,44 @@
+package com.mocion.tests;
+
+import com.mocion.pages.*;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class BookingTest extends BaseTest {
+    public LoginPage loginPage;
+    public HomePage homePage;
+    public BookingPage bookingPage;
+    public BookingDetailsPage bookingDetailsPage;
+    public PaymentPage paymentPage;
+
+    @Test
+    public void VerifyBookingCreateShouldSucceed() throws InterruptedException {
+        loginPage = new LoginPage(driver);
+        homePage = new HomePage(driver);
+        bookingPage = new BookingPage(driver);
+        bookingDetailsPage = new BookingDetailsPage(driver);
+        paymentPage = new PaymentPage(driver);
+
+        loginPage
+                .fillUserEmail()
+                .fillUserPassword()
+                .clickNextButton();
+        homePage
+                .selectMatch();
+        bookingPage
+                .clickBookNowButton()
+                .selectBookingDate()
+                .selectBookingTime()
+                .clickCourtDropdown()
+                .selectPrice();
+        bookingDetailsPage
+                .clickConfirmPaymentButton();
+        paymentPage
+                .fillCardNumber()
+                .fillCVVNumber()
+                .clickMakePaymentButton()
+                .clickAcceptPaymentButton();
+
+        Assert.assertTrue(driver.findElement(paymentPage.getPaymentSuccessLocator()).isDisplayed());
+    }
+}
