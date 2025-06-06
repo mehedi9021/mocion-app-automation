@@ -1,7 +1,6 @@
 package com.mocion.pages;
 
 import io.appium.java_client.AppiumDriver;
-import org.xml.sax.Locator;
 
 public class BookingPage extends BasePage {
     private static final String BOOKING_SCREEN = "booking_screen";
