@@ -29,7 +29,7 @@
   },
   "booking_details_screen": {
     "confirm_payment_button": "xpath://android.widget.Button[@clickable='true' and @enabled='true']",
-    "cancel_booking_button": "ui:new UiSelector().description(\"Cancel Booking\")",
+    "cancel_booking_button": "ui:new UiSelector().description(\"Cancel booking\")",
     "yes_to_cancel_booking_button": "ui:new UiSelector().description(\"Yes\")",
     "split_payment": "ui:new UiSelector().className(\"android.widget.RadioButton\").instance(0)",
     "full_payment": "ui:new UiSelector().className(\"android.widget.RadioButton\").instance(1)",
