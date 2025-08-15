@@ -323,4 +323,20 @@ public class EventDetailsPage extends BasePage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
+
+    public boolean isEventPlayerDisplayed() {
+        By locator = null;
+        try {
+            locator = getLocator(EVENT_DETAILS_SCREEN, "event_player_locator");
+        } catch (Exception ignored) {
+        }
+
+        if (locator != null) {
+            List<WebElement> elements = driver.findElements(locator);
+            if (!elements.isEmpty()) {
+                return elements.getFirst().isDisplayed();
+            }
+        }
+        return false;
+    }
 }

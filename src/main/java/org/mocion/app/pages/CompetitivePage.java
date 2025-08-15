@@ -31,4 +31,14 @@ public class CompetitivePage extends BasePage {
     public void selectPublicEvent() {
         click(COMPETITIVE_SCREEN, "select_public_event");
     }
+
+    public void waitSafely(int minutes) {
+        try {
+            Thread.sleep(minutes * 60_000L);
+            driver.getPageSource();
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            System.out.println("Wait was interrupted: " + e.getMessage());
+        }
+    }
 }

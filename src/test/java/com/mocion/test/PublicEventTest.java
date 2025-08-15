@@ -8,7 +8,6 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
 public class PublicEventTest extends BaseTest {
     public LoginPage loginPage;
@@ -249,22 +248,13 @@ public class PublicEventTest extends BaseTest {
         bookingDetailsPage
                 .clickBackIcon();
         competitivePage
-                .fillSearchKeyword(searchKeyword)
+                .waitSafely(10);
+        competitivePage
                 .selectPublicEvent();
         eventDetailsPage
                 .swipeToSeeAllPlayers(2);
 
-        try {
-            TimeUnit.MINUTES.sleep(10);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        WebElement successElement = eventDetailsPage.eventPlayerLocator();
-
-        if (successElement.isDisplayed()) {
-            Assert.fail("Event player is still displayed!");
-        }
+        Assert.assertFalse(eventDetailsPage.isEventPlayerDisplayed());
     }
 
     @Test(description = "Event with payment type club keeps player in event if they paid from app should successful")

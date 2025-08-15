@@ -17,7 +17,7 @@ import java.time.Duration;
 import java.util.List;
 
 public class BasePage {
-    protected AppiumDriver driver;
+    protected static AppiumDriver driver;
     private static final JsonObject locators;
 
     static {
@@ -26,7 +26,7 @@ public class BasePage {
     }
 
     public BasePage(AppiumDriver driver) {
-        this.driver = driver;
+        BasePage.driver = driver;
     }
 
     public final void click(String screen, String element) {
@@ -95,10 +95,6 @@ public class BasePage {
         return waitForElement(getLocator(screen, element));
     }
 
-    public void clear(String screen, String locator) {
-        findElement(screen, locator).clear();
-    }
-
     public String getText(String screen, String locator) {
         WebElement element = findElement(screen, locator);
         String text = element.getText();
@@ -107,10 +103,6 @@ public class BasePage {
             text = element.getAttribute("contentDescription");
         }
         return text;
-    }
-
-    protected String getTitle() {
-        return driver.getTitle();
     }
 
     public void scrollUntilVisible(String screen, String element) {

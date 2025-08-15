@@ -44,7 +44,8 @@
     "cancel_payment_button": "ui:new UiSelector().text(\"Cancel\")",
     "accept_payment_button": "ui:new UiSelector().text(\"Accept\")",
     "payment_successful_locator": "ui:new UiSelector().description(\"Payment Successful\")",
-    "academy_price_text": "ui:new UiSelector().textContains(\"5.17\")"
+    "academy_price_text": "ui:new UiSelector().textContains(\"5.17\")",
+    "ok_button": "ui:new UiSelector().description(\"OK\")"
   },
   "competitive_screen": {
     "search_input_field": "ui:new UiSelector().className(\"android.widget.EditText\")",
