@@ -34,12 +34,14 @@
     "split_payment": "ui:new UiSelector().className(\"android.widget.RadioButton\").instance(0)",
     "full_payment": "ui:new UiSelector().className(\"android.widget.RadioButton\").instance(1)",
     "confirm_total_payment_button": "ui:new UiSelector().className(\"android.widget.Button\").instance(0)",
-    "confirm_booking_success_message": "ui:new UiSelector().className(\"android.view.View\").descriptionContains(\"Your booking is confirmed\")"
+    "back_icon": "ui:new UiSelector().className(\"android.view.View\").instance(5)",
+    "ok_button": "ui:new UiSelector().description(\"OK\")"
   },
   "payment_screen": {
     "card_number_field": "ui:new UiSelector().className(\"android.widget.EditText\").instance(0)",
     "cvv_number_field": "ui:new UiSelector().className(\"android.widget.EditText\").instance(1)",
     "make_payment_button": "ui:new UiSelector().text(\"Make payment\")",
+    "cancel_payment_button": "ui:new UiSelector().text(\"Cancel\")",
     "accept_payment_button": "ui:new UiSelector().text(\"Accept\")",
     "payment_successful_locator": "ui:new UiSelector().description(\"Payment Successful\")",
     "academy_price_text": "ui:new UiSelector().textContains(\"5.17\")"
@@ -70,7 +72,11 @@
     "cancel_inscription_success_message": "ui:new UiSelector().description(\"Your booking canceled successfully\")",
     "book_place_button": "ui:new UiSelector().className(\"android.widget.Button\").instance(0)",
     "remove_me_from_waiting_list_button": "ui:new UiSelector().description(\"Remove me from waiting list\")",
-    "schedule_icon": "ui:new UiSelector().description(\"Schedule\")"
+    "schedule_icon": "ui:new UiSelector().description(\"Schedule\")",
+    "ok_button": "ui:new UiSelector().description(\"OK\")",
+    "confirm_total_payment_button": "ui:new UiSelector().className(\"android.widget.Button\").clickable(true).instance(0)",
+    "see_all_button": "ui:new UiSelector().className(\"android.view.View\").clickable(true).descriptionContains(\"See all\")",
+    "event_player_locator": "ui:new UiSelector().descriptionContains(\"ariful\")"
   },
   "notification_screen": {
     "add_player_to_event_notification": "ui:new UiSelector().className(\"android.view.View\").descriptionContains(\"Event Invitation Notification\").instance(0)",

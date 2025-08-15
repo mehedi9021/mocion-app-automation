@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 public class PublicEventTest extends BaseTest {
     public LoginPage loginPage;
@@ -17,6 +18,7 @@ public class PublicEventTest extends BaseTest {
     public EventDetailsPage eventDetailsPage;
     public NotificationPage notificationPage;
     public BookingDetailsPage bookingDetailsPage;
+    public PaymentPage paymentPage;
 
     private void initPages() {
         loginPage = new LoginPage(driver);
@@ -26,6 +28,7 @@ public class PublicEventTest extends BaseTest {
         eventDetailsPage = new EventDetailsPage(driver);
         notificationPage = new NotificationPage(driver);
         bookingDetailsPage = new BookingDetailsPage(driver);
+        paymentPage = new PaymentPage(driver);
     }
 
     @Test(description = "Public competitive event booking should successful")
@@ -43,8 +46,13 @@ public class PublicEventTest extends BaseTest {
                 .clickBookPlaceButton();
         bookingDetailsPage
                 .clickConfirmTotalPaymentButton();
+        paymentPage
+                .fillCardNumber(ConfigReader.get("card_number"))
+                .fillCVVNumber(ConfigReader.get("cvv_number"))
+                .clickMakePaymentButton()
+                .clickAcceptPaymentButton();
 
-        WebElement successElement = bookingDetailsPage.confirmBookingSuccessMessageLocator();
+        WebElement successElement = paymentPage.waitForPaymentSuccessElement();
         Assert.assertTrue(successElement.isDisplayed());
     }
 
@@ -218,6 +226,68 @@ public class PublicEventTest extends BaseTest {
 
         Map<String, Map<String, List<List<String>>>> roundsData = eventDetailsPage.getAllRoundsData(totalRounds);
         eventDetailsPage.verifyOpponentRepeatWithLeastPlayed(roundsData);
+    }
+
+    @Test(description = "Event with payment type club keeps player in event if they pay from app should be successful")
+    public void verify_event_with_payment_type_club_keeps_player_in_event_if_they_pay_from_app_should_succeed() {
+        String searchKeyword = "test rounds";
+
+        initPages();
+        userLogin();
+        homePage
+                .selectCompetitive();
+        competitivePage
+                .fillSearchKeyword(searchKeyword)
+                .selectPublicEvent();
+        eventDetailsPage
+                .clickBookPlaceButton();
+        bookingDetailsPage
+                .clickConfirmTotalPaymentButton();
+        paymentPage
+                .clickCancelPaymentButton()
+                .clickOkButton();
+        bookingDetailsPage
+                .clickBackIcon();
+        competitivePage
+                .fillSearchKeyword(searchKeyword)
+                .selectPublicEvent();
+        eventDetailsPage
+                .swipeToSeeAllPlayers(2);
+
+        try {
+            TimeUnit.MINUTES.sleep(10);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        WebElement successElement = eventDetailsPage.eventPlayerLocator();
+
+        if (successElement.isDisplayed()) {
+            Assert.fail("Event player is still displayed!");
+        }
+    }
+
+    @Test(description = "Event with payment type club keeps player in event if they paid from app should successful")
+    public void verify_event_with_payment_type_club_keeps_player_in_event_if_they_paid_from_app_should_succeed() {
+        String searchKeyword = "test auto cancel";
+
+        initPages();
+        userLogin();
+        homePage
+                .selectCompetitive();
+        competitivePage
+                .fillSearchKeyword(searchKeyword)
+                .selectPublicEvent();
+        eventDetailsPage
+                .clickBookPlaceButton();
+        bookingDetailsPage
+                .clickConfirmTotalPaymentButton()
+                .clickOkButton();
+        eventDetailsPage
+                .swipeToSeeAllPlayers(2);
+
+        WebElement successElement = eventDetailsPage.eventPlayerLocator();
+        Assert.assertTrue(successElement.isDisplayed());
     }
 
     private void userLogin() {
