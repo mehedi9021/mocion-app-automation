@@ -252,7 +252,7 @@ public class PublicEventTest extends BaseTest {
         competitivePage
                 .selectPublicEvent();
         eventDetailsPage
-                .swipeToSeeAllPlayers(2);
+                .swipeToSeeAllPlayers(5);
 
         Assert.assertFalse(eventDetailsPage.isEventPlayerDisplayed());
     }

@@ -33,12 +33,14 @@ public class CompetitivePage extends BasePage {
     }
 
     public void waitSafely(int minutes) {
-        try {
-            Thread.sleep(minutes * 60_000L);
-            driver.getPageSource();
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-            System.out.println("Wait was interrupted: " + e.getMessage());
+        long endTime = System.currentTimeMillis() + minutes * 60_000L;
+        while (System.currentTimeMillis() < endTime) {
+            try {
+                Thread.sleep(30_000);
+                driver.getPageSource();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
