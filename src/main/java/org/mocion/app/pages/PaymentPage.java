@@ -30,6 +30,15 @@ public class PaymentPage extends BasePage {
         return this;
     }
 
+    public PaymentPage clickCancelPaymentButton() {
+        click(PAYMENT_SCREEN, "cancel_payment_button");
+        return this;
+    }
+
+    public void clickOkButton() {
+        click(PAYMENT_SCREEN, "ok_button");
+    }
+
     public void clickAcceptPaymentButton() {
         click(PaymentPage.PAYMENT_SCREEN, "accept_payment_button");
     }

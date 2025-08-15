@@ -25,6 +25,11 @@ public class EventDetailsPage extends BasePage {
         return this;
     }
 
+    public void clickBookPlaceButton() {
+        scrollUntilVisible(EVENT_DETAILS_SCREEN, "book_place_button");
+        click(EVENT_DETAILS_SCREEN, "book_place_button");
+    }
+
     public void clickScheduleIcon() {
         click(EVENT_DETAILS_SCREEN, "schedule_icon");
     }
@@ -32,11 +37,6 @@ public class EventDetailsPage extends BasePage {
     public void clickRemoveMeFromWaitingListButton() {
         scrollUntilVisible(EVENT_DETAILS_SCREEN, "remove_me_from_waiting_list_button");
         click(EVENT_DETAILS_SCREEN, "remove_me_from_waiting_list_button");
-    }
-
-    public void clickBookPlaceButton() {
-        scrollUntilVisible(EVENT_DETAILS_SCREEN, "book_place_button");
-        click(EVENT_DETAILS_SCREEN, "book_place_button");
     }
 
     public void clickYestToConfirmCancelBooking() {
@@ -48,37 +48,26 @@ public class EventDetailsPage extends BasePage {
         click(EVENT_DETAILS_SCREEN, "add_me_to_waiting_list_button");
     }
 
-    public WebElement addMeToWaitingListSuccessLocator() {
-        By locator = getLocator(EVENT_DETAILS_SCREEN, "add_me_to_waiting_list_success_message");
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-    }
+    public void swipeToSeeAllPlayers(int swipeCount) {
+        scrollUntilVisible(EVENT_DETAILS_SCREEN, "see_all_button");
+        WebElement container = driver.findElement(AppiumBy.androidUIAutomator(
+                "new UiSelector().className(\"android.view.View\").clickable(true).descriptionContains(\"See all\")"
+        ));
 
-    public WebElement cancelInscriptionSuccessLocator() {
-        By locator = getLocator(EVENT_DETAILS_SCREEN, "cancel_inscription_success_message");
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-    }
+        int startX = container.getLocation().getX() + (int) (container.getSize().getWidth() * 0.9);
+        int endX = container.getLocation().getX() + (int) (container.getSize().getWidth() * 0.1);
+        int y = container.getLocation().getY() + container.getSize().getHeight() / 2;
 
-    public WebElement addMeToWaitingListButtonLocator() {
-        scrollUntilVisible(EVENT_DETAILS_SCREEN, "add_me_to_waiting_list_button");
-        By locator = getLocator(EVENT_DETAILS_SCREEN, "add_me_to_waiting_list_button");
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-    }
+        PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
 
-    public WebElement cancelInscriptionButtonLocator() {
-        scrollUntilVisible(EVENT_DETAILS_SCREEN, "cancel_inscription_button");
-        By locator = getLocator(EVENT_DETAILS_SCREEN, "cancel_inscription_button");
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-    }
-
-    public WebElement bookPlaceButtonLocator() {
-        scrollUntilVisible(EVENT_DETAILS_SCREEN, "book_place_button");
-        By locator = getLocator(EVENT_DETAILS_SCREEN, "book_place_button");
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        for (int i = 0; i < swipeCount; i++) {
+            Sequence swipe = new Sequence(finger, 1);
+            swipe.addAction(finger.createPointerMove(Duration.ZERO, PointerInput.Origin.viewport(), startX, y));
+            swipe.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+            swipe.addAction(finger.createPointerMove(Duration.ofMillis(500), PointerInput.Origin.viewport(), endX, y));
+            swipe.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+            driver.perform(List.of(swipe));
+        }
     }
 
     public void verifyNoPartnerRepeatUntilAllMatched(Map<String, Map<String, List<List<String>>>> roundsData) {
@@ -293,5 +282,61 @@ public class EventDetailsPage extends BasePage {
             swipe.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
             driver.perform(List.of(swipe));
         }
+    }
+
+    public WebElement addMeToWaitingListSuccessLocator() {
+        By locator = getLocator(EVENT_DETAILS_SCREEN, "add_me_to_waiting_list_success_message");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public WebElement cancelInscriptionSuccessLocator() {
+        By locator = getLocator(EVENT_DETAILS_SCREEN, "cancel_inscription_success_message");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public WebElement addMeToWaitingListButtonLocator() {
+        scrollUntilVisible(EVENT_DETAILS_SCREEN, "add_me_to_waiting_list_button");
+        By locator = getLocator(EVENT_DETAILS_SCREEN, "add_me_to_waiting_list_button");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public WebElement cancelInscriptionButtonLocator() {
+        scrollUntilVisible(EVENT_DETAILS_SCREEN, "cancel_inscription_button");
+        By locator = getLocator(EVENT_DETAILS_SCREEN, "cancel_inscription_button");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public WebElement bookPlaceButtonLocator() {
+        scrollUntilVisible(EVENT_DETAILS_SCREEN, "book_place_button");
+        By locator = getLocator(EVENT_DETAILS_SCREEN, "book_place_button");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public WebElement eventPlayerLocator() {
+        scrollUntilVisible(EVENT_DETAILS_SCREEN, "event_player_locator");
+        By locator = getLocator(EVENT_DETAILS_SCREEN, "event_player_locator");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public boolean isEventPlayerDisplayed() {
+        By locator = null;
+        try {
+            locator = getLocator(EVENT_DETAILS_SCREEN, "event_player_locator");
+        } catch (Exception ignored) {
+        }
+
+        if (locator != null) {
+            List<WebElement> elements = driver.findElements(locator);
+            if (!elements.isEmpty()) {
+                return elements.getFirst().isDisplayed();
+            }
+        }
+        return false;
     }
 }
