@@ -172,7 +172,7 @@ public class PublicEventTest extends BaseTest {
 
     @Test(description = "Player should not repeat a partner until they match with all other players in public competitive americano event should successful")
     public void verify_player_should_not_repeat_a_partner_until_they_match_with_all_other_players_in_public_competitive_americano_event_should_succeed() {
-        String searchKeyword = "test rounds";
+        String searchKeyword = "test rounds logic 3/8 2";
         int totalRounds = 5;
 
         initPages();
@@ -191,7 +191,7 @@ public class PublicEventTest extends BaseTest {
 
     @Test(description = "Not to repeat the opponent as long as possible in public competitive americano event should successful")
     public void verify_not_to_repeat_the_opponent_as_long_as_possible_in_public_competitive_americano_event_should_succeed() {
-        String searchKeyword = "test rounds";
+        String searchKeyword = "test rounds logic 3/8 2";
         int totalRounds = 5;
 
         initPages();
@@ -210,7 +210,7 @@ public class PublicEventTest extends BaseTest {
 
     @Test(description = "Repeat the opponent with the least matches played in public competitive americano event should successful")
     public void verify_repeat_the_opponent_with_the_least_matches_played_in_public_competitive_americano_event_should_succeed() {
-        String searchKeyword = "test rounds";
+        String searchKeyword = "test rounds logic 3/8 2";
         int totalRounds = 5;
 
         initPages();
@@ -225,6 +225,25 @@ public class PublicEventTest extends BaseTest {
 
         Map<String, Map<String, List<List<String>>>> roundsData = eventDetailsPage.getAllRoundsData(totalRounds);
         eventDetailsPage.verifyOpponentRepeatWithLeastPlayed(roundsData);
+    }
+
+    @Test(description = "Not to play against player in consecutive rounds in public competitive americano event should successful")
+    public void verify_not_to_play_against_player_in_consecutive_rounds_in_public_competitive_americano_event_should_succeed() {
+        String searchKeyword = "test rounds logic 3/8 2";
+        int totalRounds = 5;
+
+        initPages();
+        userLogin();
+        homePage
+                .selectCompetitive();
+        competitivePage
+                .fillSearchKeyword(searchKeyword)
+                .selectPublicEvent();
+        eventDetailsPage
+                .clickScheduleIcon();
+
+        Map<String, Map<String, List<List<String>>>> roundsData = eventDetailsPage.getAllRoundsData(totalRounds);
+        eventDetailsPage.verifyNoConsecutiveOpponents(roundsData);
     }
 
     @Test(description = "Event with payment type club keeps player in event if they pay from app should be successful")
