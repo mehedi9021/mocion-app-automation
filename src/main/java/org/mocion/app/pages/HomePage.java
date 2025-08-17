@@ -29,7 +29,7 @@ public class HomePage extends BasePage {
         click(HOME_SCREEN, "notification_icon");
     }
 
-    public void selectCoaching(){
+    public void selectCoaching() {
         click(HOME_SCREEN, "coaching_icon");
     }
 }
