@@ -246,9 +246,9 @@ public class PublicEventTest extends BaseTest {
         eventDetailsPage.verifyNoConsecutiveOpponents(roundsData);
     }
 
-    @Test(description = "Event with payment type club keeps player in event if they pay from app should be successful")
-    public void verify_event_with_payment_type_club_keeps_player_in_event_if_they_pay_from_app_should_succeed() {
-        String searchKeyword = "test rounds";
+    @Test(description = "Player who cancels Telr payment after joining an event with payment type app is automatically removed from the event after ten minutes should successful")
+    public void verify_player_who_cancels_telr_payment_after_joining_an_event_with_payment_type_app_is_automatically_removed_from_the_event_after_ten_minutes_should_succeed() {
+        String searchKeyword = "test rounds 3/8 3";
 
         initPages();
         userLogin();
@@ -293,7 +293,7 @@ public class PublicEventTest extends BaseTest {
                 .clickConfirmTotalPaymentButton()
                 .clickOkButton();
         eventDetailsPage
-                .swipeToSeeAllPlayers(2);
+                .swipeToSeeAllPlayers(5);
 
         WebElement successElement = eventDetailsPage.eventPlayerLocator();
         Assert.assertTrue(successElement.isDisplayed());
