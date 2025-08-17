@@ -248,7 +248,7 @@ public class PublicEventTest extends BaseTest {
 
     @Test(description = "Player cancels Telr payment after joining an event with payment type app is automatically removed from the event after ten minutes should successful")
     public void verify_player_cancels_telr_payment_after_joining_an_event_with_payment_type_app_is_automatically_removed_from_the_event_after_ten_minutes_should_succeed() {
-        String searchKeyword = "test rounds 3/8 3";
+        String searchKeyword = "test rounds logic 3/8 3";
 
         initPages();
         userLogin();
