@@ -10,7 +10,7 @@ public class HomePage extends BasePage {
     }
 
     public void selectMatch() {
-        click(HOME_SCREEN, "select_match");
+        click(HOME_SCREEN, "select_book_match");
     }
 
     public void selectCompetitive() {
@@ -30,6 +30,6 @@ public class HomePage extends BasePage {
     }
 
     public void selectCoaching() {
-        click(HOME_SCREEN, "coaching_icon");
+        click(HOME_SCREEN, "select_coaching");
     }
 }

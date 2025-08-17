@@ -227,6 +227,25 @@ public class PublicEventTest extends BaseTest {
         eventDetailsPage.verifyOpponentRepeatWithLeastPlayed(roundsData);
     }
 
+    @Test(description = "Not to play against player in consecutive rounds in public competitive americano event should successful")
+    public void verify_not_to_play_against_player_in_consecutive_rounds_in_public_competitive_americano_event_should_succeed() {
+        String searchKeyword = "test rounds";
+        int totalRounds = 5;
+
+        initPages();
+        userLogin();
+        homePage
+                .selectCompetitive();
+        competitivePage
+                .fillSearchKeyword(searchKeyword)
+                .selectPublicEvent();
+        eventDetailsPage
+                .clickScheduleIcon();
+
+        Map<String, Map<String, List<List<String>>>> roundsData = eventDetailsPage.getAllRoundsData(totalRounds);
+        eventDetailsPage.verifyNoConsecutiveOpponents(roundsData);
+    }
+
     @Test(description = "Event with payment type club keeps player in event if they pay from app should be successful")
     public void verify_event_with_payment_type_club_keeps_player_in_event_if_they_pay_from_app_should_succeed() {
         String searchKeyword = "test rounds";

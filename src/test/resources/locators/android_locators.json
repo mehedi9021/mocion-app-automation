@@ -5,12 +5,12 @@
     "next_button": "ui:new UiSelector().description(\"Next\")"
   },
   "home_screen": {
-    "select_match": "ui:new UiSelector().description(\"Match\")",
+    "select_book_match": "ui:new UiSelector().description(\"Book match\")",
     "select_competitive": "ui:new UiSelector().description(\"Competitive\")",
     "select_friendly": "ui:new UiSelector().description(\"Friendly\")",
     "my_upcoming_bookings": "xpath://android.widget.ImageView[contains(@content-desc, 'View all')]",
     "notification_icon": "ui:new UiSelector().className(\"android.widget.ImageView\").instance(3)",
-    "coaching_icon": "ui:new UiSelector().className(\"android.widget.ImageView\").instance(8)"
+    "select_coaching": "ui:new UiSelector().description(\"Coaching\")"
   },
   "booking_screen": {
     "game_type_friendly": "ui:new UiSelector().description(\"Friendly\")",
