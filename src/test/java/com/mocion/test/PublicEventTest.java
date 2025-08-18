@@ -32,7 +32,7 @@ public class PublicEventTest extends BaseTest {
 
     @Test(description = "Public competitive event booking should successful")
     public void verify_public_competitive_event_booking_should_succeed() {
-        String searchKeyword = "test rounds";
+        String searchKeyword = "test rounds logic 3/8 3";
 
         initPages();
         userLogin();
