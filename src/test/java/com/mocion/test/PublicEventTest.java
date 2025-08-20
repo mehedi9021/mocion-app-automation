@@ -356,7 +356,7 @@ public class PublicEventTest extends BaseTest {
 
     @Test(description = "Request to join waiting list for public friendly event should successful")
     public void verify_request_to_join_waiting_list_for_public_friendly_event_should_succeed() {
-        String searchKeyword = "test rounds";
+        String searchKeyword = "test rounds logic 3/8 3";
 
         initPages();
         userLogin();
