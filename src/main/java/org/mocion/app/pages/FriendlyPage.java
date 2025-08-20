@@ -24,6 +24,10 @@ public class FriendlyPage extends BasePage {
         return this;
     }
 
+    public void selectPublicEvent() {
+        click(FRIENDLY_SCREEN, "select_public_event");
+    }
+
     public void selectTournament() {
         click(FRIENDLY_SCREEN, "select_tournament");
     }

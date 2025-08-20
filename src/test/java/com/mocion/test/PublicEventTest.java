@@ -18,6 +18,7 @@ public class PublicEventTest extends BaseTest {
     public NotificationPage notificationPage;
     public BookingDetailsPage bookingDetailsPage;
     public PaymentPage paymentPage;
+    public FriendlyPage friendlyPage;
 
     private void initPages() {
         loginPage = new LoginPage(driver);
@@ -28,6 +29,7 @@ public class PublicEventTest extends BaseTest {
         notificationPage = new NotificationPage(driver);
         bookingDetailsPage = new BookingDetailsPage(driver);
         paymentPage = new PaymentPage(driver);
+        friendlyPage = new FriendlyPage(driver);
     }
 
     @Test(description = "Public competitive event booking should successful")
@@ -296,6 +298,125 @@ public class PublicEventTest extends BaseTest {
                 .swipeToSeeAllPlayers(5);
 
         WebElement successElement = eventDetailsPage.eventPlayerLocator();
+        Assert.assertTrue(successElement.isDisplayed());
+    }
+
+    @Test(description = "Public friendly event booking should successful")
+    public void verify_public_friendly_event_booking_should_succeed() {
+        String searchKeyword = "test rounds logic 3/8 3";
+
+        initPages();
+        userLogin();
+        homePage
+                .selectFriendly();
+        friendlyPage
+                .fillSearchKeyword(searchKeyword)
+                .selectPublicEvent();
+        eventDetailsPage
+                .clickBookPlaceButton();
+        bookingDetailsPage
+                .clickConfirmTotalPaymentButton();
+        paymentPage
+                .fillCardNumber(ConfigReader.get("card_number"))
+                .fillCVVNumber(ConfigReader.get("cvv_number"))
+                .clickMakePaymentButton()
+                .clickAcceptPaymentButton();
+
+        WebElement successElement = paymentPage.waitForPaymentSuccessElement();
+        Assert.assertTrue(successElement.isDisplayed());
+    }
+
+    @Test(description = "Right buttons appear for the user depending on his status for public friendly event should successful")
+    public void verify_right_buttons_appear_for_the_user_depending_on_his_status_for_public_friendly_event_should_succeed() {
+        String searchKeyword = "test rounds";
+
+        initPages();
+        userLogin();
+        homePage
+                .selectFriendly();
+        friendlyPage
+                .fillSearchKeyword(searchKeyword)
+                .selectPublicEvent();
+
+        WebElement successElement = eventDetailsPage.addMeToWaitingListButtonLocator();
+        Assert.assertTrue(successElement.isDisplayed());
+
+        eventDetailsPage
+                .clickAddMeToWaitingListButton();
+
+        WebElement successElementTwo = eventDetailsPage.removeMeFromWaitingListButtonLocator();
+        Assert.assertTrue(successElementTwo.isDisplayed());
+
+        eventDetailsPage
+                .clickRemoveMeFromWaitingListButton();
+
+        WebElement successElementThree = eventDetailsPage.addMeToWaitingListButtonLocator();
+        Assert.assertTrue(successElementThree.isDisplayed());
+    }
+
+    @Test(description = "Request to join waiting list for public friendly event should successful")
+    public void verify_request_to_join_waiting_list_for_public_friendly_event_should_succeed() {
+        String searchKeyword = "test rounds";
+
+        initPages();
+        userLogin();
+        homePage
+                .selectFriendly();
+        friendlyPage
+                .fillSearchKeyword(searchKeyword)
+                .selectPublicEvent();
+        eventDetailsPage
+                .clickAddMeToWaitingListButton();
+
+        WebElement successElement = eventDetailsPage.addMeToWaitingListSuccessLocator();
+        Assert.assertTrue(successElement.isDisplayed());
+    }
+
+    @Test(description = "Remove me from waiting list for public friendly event should successful")
+    public void verify_remove_me_from_waiting_list_for_public_friendly_event_should_succeed() {
+        String searchKeyword = "test rounds";
+
+        initPages();
+        userLogin();
+        homePage
+                .selectFriendly();
+        friendlyPage
+                .fillSearchKeyword(searchKeyword)
+                .selectPublicEvent();
+        eventDetailsPage
+                .clickRemoveMeFromWaitingListButton();
+
+        WebElement successElement = eventDetailsPage.bookPlaceButtonLocator();
+        Assert.assertTrue(successElement.isDisplayed());
+    }
+
+    @Test(description = "Cancel public friendly event after join should successful")
+    public void verify_cancel_public_friendly_event_after_cancel_should_succeed() {
+        String searchKeyword = "test rounds";
+
+        initPages();
+        userLogin();
+        homePage
+                .selectFriendly();
+        friendlyPage
+                .fillSearchKeyword(searchKeyword)
+                .selectPublicEvent();
+        eventDetailsPage
+                .clickCancelInscriptionButton()
+                .clickYestToConfirmCancelBooking();
+
+        WebElement successElement = eventDetailsPage.cancelInscriptionSuccessLocator();
+        Assert.assertTrue(successElement.isDisplayed());
+    }
+
+    @Test(description = "Add player to public friendly event send notification should successful")
+    public void verify_add_player_to_public_friendly_event_send_notification_should_succeed() {
+        initPages();
+        userLogin();
+        homePage
+                .clickNotificationIcon();
+
+        WebElement successElement = notificationPage.addPlayerToEventNotificationLocator();
         Assert.assertTrue(successElement.isDisplayed());
     }
 

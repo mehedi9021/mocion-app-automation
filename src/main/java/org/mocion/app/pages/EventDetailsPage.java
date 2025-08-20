@@ -310,6 +310,13 @@ public class EventDetailsPage extends BasePage {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
+    public WebElement removeMeFromWaitingListButtonLocator() {
+        scrollUntilVisible(EVENT_DETAILS_SCREEN, "remove_me_from_waiting_list_button");
+        By locator = getLocator(EVENT_DETAILS_SCREEN, "remove_me_from_waiting_list_button");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
     public WebElement bookPlaceButtonLocator() {
         scrollUntilVisible(EVENT_DETAILS_SCREEN, "book_place_button");
         By locator = getLocator(EVENT_DETAILS_SCREEN, "book_place_button");

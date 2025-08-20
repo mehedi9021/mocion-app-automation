@@ -56,7 +56,8 @@
   "friendly_screen": {
     "search_input_field": "ui:new UiSelector().className(\"android.widget.EditText\")",
     "select_tournament": "ui:new UiSelector().className(\"android.view.View\").clickable(true).instance(2)",
-    "click_tournaments": "ui:new UiSelector().description(\"Tournaments\")"
+    "click_tournaments": "ui:new UiSelector().description(\"Tournaments\")",
+    "select_public_event": "ui:new UiSelector().className(\"android.view.View\").clickable(true).instance(2)"
   },
   "tournaments_screen": {
     "book_place_button": "ui:new UiSelector().description(\"Book place 10.0 AED\")",
