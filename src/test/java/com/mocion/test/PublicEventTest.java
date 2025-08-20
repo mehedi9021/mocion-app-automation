@@ -328,7 +328,7 @@ public class PublicEventTest extends BaseTest {
 
     @Test(description = "Right buttons appear for the user depending on his status for public friendly event should successful")
     public void verify_right_buttons_appear_for_the_user_depending_on_his_status_for_public_friendly_event_should_succeed() {
-        String searchKeyword = "test rounds";
+        String searchKeyword = "test rounds logic 3/8 3";
 
         initPages();
         userLogin();
@@ -374,7 +374,7 @@ public class PublicEventTest extends BaseTest {
 
     @Test(description = "Remove me from waiting list for public friendly event should successful")
     public void verify_remove_me_from_waiting_list_for_public_friendly_event_should_succeed() {
-        String searchKeyword = "test rounds";
+        String searchKeyword = "test rounds logic 3/8 3";
 
         initPages();
         userLogin();
@@ -392,7 +392,7 @@ public class PublicEventTest extends BaseTest {
 
     @Test(description = "Cancel public friendly event after join should successful")
     public void verify_cancel_public_friendly_event_after_cancel_should_succeed() {
-        String searchKeyword = "test rounds";
+        String searchKeyword = "test rounds logic 3/8 3";
 
         initPages();
         userLogin();
