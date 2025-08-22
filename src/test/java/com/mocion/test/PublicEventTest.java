@@ -420,6 +420,26 @@ public class PublicEventTest extends BaseTest {
         Assert.assertTrue(successElement.isDisplayed());
     }
 
+    @Test(description = "Waiting list player get notification when public friendly event player cancel booking should successful")
+    public void verify_waiting_list_player_get_notification_when_public_friendly_event_player_cancel_booking_should_succeed() {
+        userLogin();
+        homePage
+                .clickNotificationIcon();
+
+        WebElement successElement = notificationPage.eventWaitingListNotificationLocator();
+        Assert.assertTrue(successElement.isDisplayed());
+    }
+
+    @Test(description = "Waiting list player get notification when club admin remove player from public friendly event should successful")
+    public void verify_waiting_list_player_get_notification_when_club_admin_remove_player_from_public_friendly_event_should_succeed() {
+        userLogin();
+        homePage
+                .clickNotificationIcon();
+
+        WebElement successElement = notificationPage.eventWaitingListNotificationLocator();
+        Assert.assertTrue(successElement.isDisplayed());
+    }
+
     private void userLogin() {
         initPages();
         loginPage
