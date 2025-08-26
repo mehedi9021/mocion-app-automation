@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class GameWithCoachTest extends BaseTest {
+public class CoachingTest extends BaseTest {
     public LoginPage loginPage;
     public HomePage homePage;
     public NotificationPage notificationPage;
