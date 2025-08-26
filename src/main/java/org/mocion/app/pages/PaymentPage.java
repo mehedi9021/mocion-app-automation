@@ -1,6 +1,7 @@
 package org.mocion.app.pages;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,11 +18,13 @@ public class PaymentPage extends BasePage {
 
     public PaymentPage fillCardNumber(String cardNumber) {
         type(PAYMENT_SCREEN, "card_number_field", cardNumber);
+        ((AndroidDriver) driver).hideKeyboard();
         return this;
     }
 
     public PaymentPage fillCVVNumber(String cvvNumber) {
         type(PAYMENT_SCREEN, "cvv_number_field", cvvNumber);
+        ((AndroidDriver) driver).hideKeyboard();
         return this;
     }
 
