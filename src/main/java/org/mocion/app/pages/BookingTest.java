@@ -1,6 +1,5 @@
-package com.mocion.test;
+package org.mocion.app.pages;
 
-import org.mocion.app.pages.*;
 import org.mocion.app.utils.ConfigReader;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
